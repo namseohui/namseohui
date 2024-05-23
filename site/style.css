@@ -1,0 +1,121 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+    color: #000;}
+img {vertical-align: bottom;}
+
+
+
+
+
+
+/* 헤더 로고 설정 */
+.logo {font-size: 30px;}
+.logo a {}
+
+/* 네비설정 */
+.box2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.gnb {}
+.gnb ul {display: flex;
+    justify-content: flex-end;
+align-items: center;}
+.gnb li {padding: 5px;
+font-size: 14px;}
+.gnb a {}
+
+
+/* 사진설정 */
+.topimg {max-width: 100%;}
+
+
+/* 공지사항설정 */
+.box4 {}
+.notice h1 {font-size: 18px;
+    margin-bottom: 5px;
+    color: #666;}
+.notice ul {}
+
+.notice a {display: block;
+padding: 5px;
+font-size: 14px;
+border-bottom: dotted 2px #ddd;}
+
+.box4 li time {color: #888;}
+
+.notice a::after {content: ''; display: block; clear: both;}
+.notice time {float: left;}
+.notice .txt {float: none;
+    margin-left: 40px;
+padding-left: 10px;}
+
+
+/* 푸터설정 */
+
+.box5 {background-color: #ddd;
+padding: 15px 0;}
+.copyright {
+    background-color: #ddd;
+}
+.copyright p {
+    font-size: 14px;
+    color: #666;}
+
+
+/* 여백설정 */
+.boxA {padding: 8px 10px;}
+.box3 {}
+.box4 {padding: 15px 10px;}
+.box5 {}
+
+
+
+
+
+
+/* 미디어쿼리구간설정 ㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁㅁ */
+
+/* 768px이상일때 ddddddddddddddddddd*/
+@media(min-width:768px){
+
+/* 레이아웃설정 */
+.boxA {
+    display: flex;
+margin-bottom: 10px;}
+.boxA div {width: 50%;}
+
+.box2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gnb {}
+.gnb ul {display: flex;
+    justify-content: flex-end;
+align-items: center;}
+
+
+
+
+
+
+
+}
+
+/* 와이드데스크탑설정 dddddddddddddddddd*/
+@media(min-width:1280px){
+
+.boxA , .copyright, .box3 , .box4 {width: 1140px;
+margin: 0 auto;}
+
+.boxA-out {border-bottom: 1px solid #ddd;
+padding: 8px 0;
+margin-bottom: 15px;}
+}
