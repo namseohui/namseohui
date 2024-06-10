@@ -347,6 +347,7 @@ section:nth-child(3) {
 .reward_inner .txtBox .bottomBox {
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
 }
 
 .reward_inner .txtBox .bottomBox .text {
@@ -360,7 +361,7 @@ section:nth-child(3) {
 .reward_inner .txtBox .bottomBox .btn ul {
     display: flex;
     justify-content: flex-end;
-    padding-top: 15px;
+    align-items: center;
 }
 
 .reward_inner .txtBox .bottomBox .btn li {}
