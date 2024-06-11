@@ -222,7 +222,8 @@ section:nth-child(3) {background-color: #1e3932;
 .reward_inner .txtBox {width: calc(100% - 220px);}
 
 
-.reward_inner .txtBox .topBox{display: flex;
+.reward_inner .txtBox .topBox{
+    display: flex;
     flex-wrap: wrap;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     padding-bottom: 15px;
@@ -277,6 +278,204 @@ letter-spacing:-1px;
 }
 
 
+/* 네번째섹션설정 */
+section:nth-child(4) {
+    background-image: url(img/summer_bean_bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 400px;
+    padding: 40px 0;
+}
+
+.summer_inner {
+    display: flex;
+    justify-content: center;
+}
+
+.summer_inner .imgBox {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.summer_inner .txtBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #7e5732;
+}
+
+.summer_inner .txtBox h4 {
+    letter-spacing: -2px;
+    font-size: 18px;
+}
+.summer_inner .txtBox h2 {
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.summer_inner .txtBox p {
+    letter-spacing: -2px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.summer_inner .txtBox span {}
+.summer_inner .txtBox span a {
+    color: #7e5732;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #7e5732;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+
+}
+.summer_inner .txtBox span a:hover {
+    background-color: #7e5732;
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* 다섯번째섹션설정 */
+section:nth-child(5) {
+    background-image: url(img/bali_bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 300px;
+    padding: 40px 0;
+}
+
+.bali_inner {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.bali_inner .txtBox {
+    display: flex;
+    flex-direction: column;
+    /* width: ; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bali_inner .txtBox img {
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.bali_inner .txtBox span {}
+.bali_inner .txtBox a {
+    color: #b87643;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #b87643;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.bali_inner .txtBox a:hover {
+    background-color: #b87643;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.bali_inner .imgBox {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* 여섯번째섹션설정 */
+section:nth-child(6) {
+    background-image: url(img/2024_summer_pick_bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    padding: 40px 0;
+    background-attachment: fixed;
+}
+
+
+.pickup_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.pickup_inner .txtBox {
+    color: #fff;
+    text-align: right;
+    width: 50%;
+}
+.pickup_inner .imgBox {
+    width: 50%;
+}
+
+.pickup_inner .txtBox .topTxt {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 7px;
+    line-height: 80px;
+    margin-bottom: 15px;
+    }
+.pickup_inner .txtBox .topTxt em {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 100px;
+}
+.pickup_inner .txtBox .topTxt b {
+    font-weight: 600;
+    font-size: 80px;
+    letter-spacing: 6px;
+
+}
+
+
+.pickup_inner .txtBox .bottomTxt {
+    line-height: 25px;
+    font-size: 13px;
+}
+.pickup_inner .txtBox .bottomTxt p {
+    font-size: 23px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.pickup_inner .txtBox .bottomTxt strong {}
+.pickup_inner .txtBox .bottomTxt span {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.pickup_inner .txtBox .bottomTxt a {
+    color: #fff;
+}
+
+.pickup_inner .txtBox .bottomTxt a {
+    color: #fff;
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+
+.pickup_inner .txtBox .bottomTxt a:hover {
+    background-color: #fff;
+    color: #000;
+    text-decoration: underline;
+
+
+
 
 
 /* 미디어쿼리구간설정############################################### */
@@ -287,12 +486,13 @@ letter-spacing:-1px;
 @media(min-width:1280px){
 
 
-    .header_inner , .reward_inner{width: 1240px;
-                    margin: 0 auto;}
-
-    .notice_inner {width: 620px;
-               
-    }
-    .promo_inner{width: 620px;}
+    .header_inner, .reward_inner,
+    .summer_inner, .bali_inner,
+    .pickup_inner {
+        width: 1240px;
+        margin: 0 auto;}
+    .notice_inner {width: 620px;}
+    .promo_inner {width: 620px;}
 
 }
+
