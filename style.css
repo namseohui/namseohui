@@ -1,0 +1,1120 @@
+/* 언어설정 */
+@charset 'utf-8';
+
+/* 구글폰트연결 */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* font-family: "Libre Baskerville", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Meie+Script&display=swap');
+/* 키오프 font-family: "Meie Script", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+/* 스타인웨이 font-family: "Libre Baskerville", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 커피박물관 font-family: "inter", "Poppins", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+/* 일반글씨 font-family: "Lalezar", system-ui; */
+
+
+/* 전체설정 */
+* {margin: 0; padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none; color: #fff;}
+image {vertical-align: bottom;}
+
+
+/* wrap 설정 */
+.wrap {
+    background-color: black;
+    width: 100%;
+    height: 2042px;    
+}
+
+
+
+
+/* ㅇㅁㅈㅇㅁㅈㅇㅁㅈ 이모지 설정 z-index: 999; ㅇㅁㅈㅇㅁㅈㅇㅁㅈ */
+.imog {
+    position: fixed;
+    width: 130px;
+    height: 130px;
+    bottom: 40px;
+    right: 0;
+    z-index: 999;
+}
+
+.imog>div {position: absolute;}
+
+.imog_bg {
+    z-index: 0;
+    width: 350px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    margin-left: -190px;
+    margin-top: -180px;
+    transition: all 0.3s;
+}
+
+.imog_basic {
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform-origin: 40% 45%;
+    animation: imog infinite linear 2s;
+}
+
+.imog_smile {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transform-origin: 40% 45%;
+    animation: imog infinite linear 2s;
+}
+
+.imog>div:nth-child(1) img {width: 100%; height: 100%;}
+.imog>div:nth-child(2) img {width: auto; height: 100%;}
+.imog>div:nth-child(3) img {width: auto; height: 100%;}
+
+/* 이모지 on값 설정 */
+.imog_bg.on {
+    width: 630px;
+    height: 630px;
+    margin-left: -330px;
+    margin-top: -320px;
+}
+
+.imog_basic.on {z-index: 0;}
+
+/* ㅇㅁㅈㅇㅁㅈ 이모지 설정 끝 ㅇㅁㅈㅇㅁㅈ*/
+
+
+
+
+
+/* ◆◆◆◆◆◆ 1.section  첫번째 섹션 설정 ◆◆◆◆◆◆ */
+.port {
+    width: 100%;
+    height: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.port_inner {
+    width: 95%;
+    height: 800px;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+.port_inner h2 {
+    width: 100%;
+    z-index: 999;
+    font-size: 150px;
+    font-family: "Libre Baskerville", serif;
+    position: absolute;
+    top: 50%;
+    margin-top: -80px;
+    text-align: center;
+    animation: bling infinite linear 4s;
+}
+
+/* 마우스 원형 설정  z-index: 99 */
+.mouse {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    z-index: 99;
+    background-color: red;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px;
+
+    
+    background-image: url(img/mouse.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
+
+    user-select: none;
+    pointer-events: none;
+}
+
+.clickBox {
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    top: 50%;
+    margin-top: -380px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ◇◇◇◇◇◇ 1.section  첫번째 섹션 설정 끝 ◇◇◇◇◇◇ */
+
+
+
+
+
+
+/* ▶▶▶▶▶▶ 2.section  두번째 섹션 설정 ◀◀◀◀◀◀ */
+.about {
+    width: 100%;
+    height: 950px;
+    position: relative;
+}
+
+/* 배경반짝이 설정 */
+body, #starcanvas {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: #000; */
+}
+.about h1 {
+    width: 100%;
+    z-index: 0;
+    font-size: 100px;
+    font-family: "Libre Baskerville", serif;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    text-align: center;
+    animation: bling infinite linear 4s;
+}
+
+/* 작품 박스 설정 */
+.about>div {
+    width: 430px;
+    height: 260px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.about>div h2 {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 350px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about>div h3 {
+    margin-top: 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.about>div p {
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+.about>div em {
+    margin-top: 30px;
+    color: #fff;
+    font-style: normal;
+    font-size: 16px;
+}
+
+/* 각 박스 설정 */
+.about_stein {
+    top: 10%;
+    left: 9%;
+    box-shadow: 0 0 30px #ffffff;
+    animation: project1 infinite linear 6s;
+}
+
+.about_stein h2 {
+    font-family: "Libre Baskerville", serif;
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 20px #ffffff;
+}
+
+
+.about_kiss {
+    top: 35%;
+    right: 5%;
+    box-shadow: 0 0 30px #DDF344;
+    animation: project2 infinite linear 6s;
+}
+.about_kiss h2 {
+    font-family: "Meie Script", cursive;
+    background-color: #DDF344;
+    font-size: 30px;
+    box-shadow: 0 0 20px #DDF344;
+}
+
+
+.about_coffee {
+    bottom: 5%;
+    left: 30%;
+    box-shadow: 0 0 30px #4aa36c;
+    animation: project3 infinite linear 6s;
+}
+.about_coffee h2 {
+    font-family: "inter", "Poppins", sans-serif;
+    background-color: #244430;
+    font-size: 26px;
+    color: #fff;
+    box-shadow: 0 0 20px #264f36;
+}
+
+/* 프로젝트 팝업 */
+aside {
+    width: 250px;
+    height: 180px;
+    border-radius: 20px;
+    z-index: 9999;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    opacity: 0;
+    cursor: pointer;
+}
+aside>div {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(00, 00, 00, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside p {
+    font-size: 16px;
+    color: #fff;
+}
+aside i {
+    
+}
+.about_stein_pop {
+    top: 12%;
+    margin-top: 80px;
+    left: 10%;
+    margin-left: 380px;
+    box-shadow: 0 0 30px #ffffff;
+    rotate: -18deg;
+    background-image: url(img/pop_stein.jpg);
+}
+.stein_poppop {
+    top: 12%;
+    margin-top: 220px;
+    left: 10%;
+    margin-left: -150px;
+    box-shadow: 0 0 30px #ffffff;
+    rotate: 10deg;
+    background-image: url(img/poppop_stein.jpg);
+}
+
+.about_kiss_pop {
+    top: 35%;
+    margin-top: -150px;
+    right: 8%;
+    margin-right: 300px;
+    box-shadow: 0 0 30px #DDF344;
+    rotate: -10deg;
+    background-image: url(img/pop_kiss.jpg);
+    background-position: top center;
+}
+.kiss_poppop {
+    top: 35%;
+    margin-top: 250px;
+    right: 8%;
+    margin-right: -50px;
+    box-shadow: 0 0 30px #DDF344;
+    rotate: 8deg;
+    background-image: url(img/poppop_kiss.jpg);
+    background-position: top center;
+}
+
+.about_coffee_pop {
+    bottom: 5%;
+    margin-bottom: 150px;
+    left: 30%;
+    margin-left: -200px;
+    box-shadow: 0 0 30px #4aa36c;
+    rotate: 15deg;
+    background-image: url(img/pop_coffee.jpg);
+    background-position: top center;
+    z-index: 2;
+}
+.coffee_poppop {
+    bottom: 5%;
+    margin-bottom: 20px;
+    left: 30%;
+    margin-left: 420px;
+    box-shadow: 0 0 30px #4aa36c;
+    rotate: -18deg;
+    background-image: url(img/poppop_coffee.jpg);
+    background-position: top center;
+    z-index: 1;
+}
+
+figure {
+    position: fixed;
+    width: 1700px;
+    height: 700px;
+    background-color: #000;
+    border: 15px solid #fff;
+    top: 50%;
+    margin-top: -350px;
+    left: 50%;
+    margin-left: -850px;
+    z-index: 99999;
+    display: flex;
+    flex-wrap: wrap;
+}
+figure h2 {
+    color: #fff;
+    font-family: "Libre Baskerville", serif;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    width: 1700px;
+    height: 50px;
+    text-align: center;
+    top: -63px;
+    left: 50%;
+    margin-left: -850px;
+}
+figure h3 {
+    color: #fff;
+    font-family: "Libre Baskerville", serif;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    width: 1700px;
+    height: 50px;
+    text-align: center;
+    bottom: 0;
+    bottom: -80px;
+    left: 50%;
+    margin-left: -850px;
+}
+figure .poppopup1 {
+    width: 800px;
+    height: 55%;
+    position: relative;
+}
+figure .poppopup2 {
+    width: 900px;
+    height: 55%;
+}
+figure .poppopup3 {
+    width: 830px;
+    height: 20%;
+}
+figure .poppopup4 {
+    width: 750px;
+    height: 20%;
+}
+figure .poppopup5 {
+    width: 100%;
+    height: 25%;
+}
+
+
+/* 680px  poppopup1 설정 */
+/* 컨셉보기 모니터 설정 */
+figure .poppopup1>div {position: absolute;}
+figure .poppopup1>div:nth-child(1) {
+    width: 401px;
+    height: auto;
+    left: 50%;
+    margin-left: -159px;
+    top: 50%;
+    margin-top: -150px;
+}
+figure .poppopup1>div:nth-child(2) {
+    width: 364px;
+    height: 215px;
+    top: 50%;
+    margin-top: -131px;
+    left: 50%;
+    margin-left: -142px;
+    overflow: hidden;
+}
+figure .poppopup1>div:nth-child(1) img {width: 100%; height: auto;}
+figure .poppopup1>div:nth-child(2) ul {
+    width: 364px;
+    height: 215px;
+    display: flex;
+    position: relative;
+}
+figure .poppopup1>div:nth-child(2) ul li {
+    width: 364px;
+    height: 215px;
+    position: absolute;
+}
+figure .poppopup1>div:nth-child(2) ul li:nth-child(1) {left: 0;}
+figure .poppopup1>div:nth-child(2) ul li:nth-child(2) {left: -100%;}
+figure .poppopup1>div:nth-child(2) ul li:nth-child(3) {left: -100%;}
+figure .poppopup1>div:nth-child(2) ul li:nth-child(4) {left: -100%;}
+
+figure .poppopup1>div:nth-child(2) ul li img {
+    width: 364px;
+    height: 215px;
+}
+.stein_poppopup {z-index: -50;}
+.kiss_poppopup {z-index: -50;}
+.coffee_poppopup {z-index: -50;}
+
+
+.about_stein_pop.on {opacity: 1;}
+.about_kiss_pop.on {opacity: 1;}
+.about_coffee_pop.on {opacity: 1;}
+
+figure i {cursor: pointer;}
+
+/* 컨셉보기 두번째부분 설정 poppopup2 설정 */
+figure .poppopup2 {display: flex; align-items: center;}
+figure .poppopup2_inner {
+    width: 500px;
+    height: 100px;
+    /* background-color: #000; */
+    color: #fff;
+    font-family: "Lalezar", system-ui;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 45px;
+    border-radius: 20px;
+    margin-left: 30px;
+    transition: all 0.8s;
+}
+figure .poppopup2_inner h4 {
+    font-size: 26px;
+    font-family: "Libre Baskerville", serif;
+    padding-left: 15px;
+    margin-top: 15px;
+    border-left: 8px solid #fff;
+    transition: border-left 0.8s;
+}
+figure .poppopup2_inner p {
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
+/* 컨셉보기 세번째부분 설정 poppopup3 설정 */
+figure .poppopup3 {display: flex; align-items: center;}
+figure .poppopup3_inner {
+    width: 500px;
+    height: 130px;
+    color: #fff;
+    font-family: "Lalezar", system-ui;
+    border-radius: 20px;
+    transition: all 0.8s;
+    margin-left: 80px;
+    padding: 10px;
+    padding-left: 50px;
+}
+figure .poppopup3_inner h4 {
+    font-size: 26px;
+    font-family: "Libre Baskerville", serif;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-left: 8px solid #fff;
+    transition: border-left 0.8s;
+}
+figure .poppopup3_inner>div {display: flex; width: 100%; margin-top: 20px;}
+figure .poppopup3_inner>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+figure .poppopup3_inner>div p {
+    height: 40px;
+    width: 210px;
+}
+figure .poppopup3_inner>div>div:nth-child(2) p {width: 300px;}
+
+
+
+
+/* 컨셉보기 네번째부분 설정 poppopup4 설정 */
+figure .poppopup4 {display: flex; align-items: center;}
+figure .poppopup4_inner {
+    color: #fff;
+    width: 500px;
+    height: 130px;
+    font-family: "Lalezar", system-ui;
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 50px;
+    transition: all 0.8s;
+}
+figure .poppopup4_inner h4 {
+    font-size: 26px;
+    font-family: "Libre Baskerville", serif;
+    padding-left: 15px;
+    margin-top: 15px;
+    border-left: 8px solid #fff;
+    transition: border-left 0.8s;
+}
+figure .poppopup4_inner .poppopup4_txt {
+    width: 400px;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    margin-top: 30px;
+}
+figure .poppopup4_inner .poppopup4_txt>div {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 3px #fff;
+    transition: background-color 0.8s;
+}
+.poppopup4_txt1 {margin-right: 30px; background-color: #fff; color: #000;}
+.poppopup4_txt2 {background-color: #000;}
+figure .poppopup4_inner p {
+    font-size: 16px;
+}
+
+.poppopup4_txt1_kiss {background-color: #DDF344;}
+.poppopup4_txt1_coffee {background-color: #244430; color: #fff;}
+.poppopup4_txt2_coffee {background-color: #482504;}
+
+/* 컨셉보기 다섯번째부분 설정 poppopup5 설정 */
+figure .poppopup5 {display: flex; align-items: center;}
+figure .poppopup5_inner {
+    color: #fff;
+    width: 1200px;
+    height: 130px;
+    font-family: "Lalezar", system-ui;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 50px;
+    transition: all 0.8s;
+    background-color: #000;
+    margin-left: 80px;
+}
+figure .poppopup5_inner h4 {
+    font-size: 26px;
+    font-family: "Libre Baskerville", serif;
+    padding-left: 15px;
+    margin-top: 15px;
+    border-left: 8px solid #fff;
+    transition: border-left 0.8s;
+}
+figure .poppopup5_inner p {
+    font-size: 16px;
+    margin-top: 20px;
+    letter-spacing: 1.5px;
+}
+
+
+
+
+
+/* 호버값 */
+.about>div:hover {animation: none;}
+aside:hover i {color: rgba(255, 255, 255, 1);}
+.coffee_poppop:hover {z-index: 2;}
+figure .poppopup2:hover .poppopup2_inner {background-color: #fff; color: #000;}
+figure .poppopup2:hover h4 {border-left: 8px solid #000;}
+figure .poppopup3:hover .poppopup3_inner {background-color: #fff; color: #000;}
+figure .poppopup3:hover h4 {border-left: 8px solid #000;}
+figure .poppopup4:hover .poppopup4_inner {background-color: #fff;}
+figure .poppopup4:hover h4 {border-left: 8px solid #000; color: #000;}
+figure .poppopup4:hover .poppopup4_txt1 {box-shadow: 0 0 10px 3px rgb(145, 145, 145);}
+figure .poppopup4:hover .poppopup4_txt2 {box-shadow: 0 0 10px 3px rgb(145, 145, 145);}
+figure .poppopup5:hover .poppopup5_inner {background-color: #fff; color: #000;}
+figure .poppopup5:hover h4 {border-left: 8px solid #000;}
+figure .poppopup4:hover .poppopup4_txt1_kiss {background-color: #DDF344; color: #000;}
+/* ▷▷▷▷▷▷ 2.section  두번째 섹션 설정 끝 ◁◁◁◁◁◁ */
+
+
+
+
+
+
+
+/* ☞☞☞☞☞☞☞☞ 3.section  세번째 섹션 설정 ☜☜☜☜☜☜☜ */
+/* ☞☞☞ 섹션 안 아티클 화면설정 ☜☜☜ */
+/* .detail {
+    height: 2850px;
+    width: 100%;
+    background-image: url(img/detail_bg.jpg);
+    background-attachment: fixed;
+    
+}
+
+.detail article {
+    height: 950px;
+    width: 100%;
+} */
+
+
+/* ☞☞☞ 섹션1 스타인 설정 ☜☜☜ */
+/* ☞☞☞ 섹션2 키오프 설정 ☜☜☜ */
+/* ☞☞☞ 섹션3 충주커피 설정 ☜☜☜ */
+
+
+/* ▩▩▩▩▩▩▩ 3.section  세번째 섹션 설정 끝 ▩▩▩▩▩▩▩ */
+
+
+
+
+
+
+
+/* ◆◆◆◆◆◆◆◆◆◆ 팝업 설정 z-index: 99999 ◆◆◆◆◆◆◆◆◆◆ */
+/* 팝업전체화면 설정 */
+.popup {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    /* 임의설정 */
+    display: none;
+    /* display: block; */
+}
+
+.popup1 {
+    height: 8%;
+    width: 100%;
+}
+.popup2 {
+    height: 84%;
+    width: 100%;
+}
+.popup3 {
+    height: 8%;
+    width: 100%;
+}
+
+/* popup1 설정 */
+.popup1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup1 h2 {
+    font-family: "Libre Baskerville", serif;
+    color: #fff;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+/* popup3 설정 */
+.popup3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.popup3 i {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* popup2 설정 */
+.popup2 {}
+.popup2-1 {
+    height: 120px;
+    position: relative;
+}
+.popup2-2 {
+    height: calc(100% - 240px);
+}
+.popup2-3 {
+    height: 120px;
+    position: relative;
+}
+
+/* 상세화면설정 */
+.popup2-1>div, .popup2-3>div {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* 각 팝업메뉴 설정 */
+.popup2-1>div p, .popup2-3>div p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.popup_ed {
+    text-shadow: 0 0 8px #FF2272;
+    -webkit-text-stroke: #FF2272 0.3px;
+    box-shadow: 0 0 30px #FF2272;
+    left: 0;
+    margin-left: 50px;
+}
+.popup_ca {
+    text-shadow: 0 0 8px #4DA9FF;
+    -webkit-text-stroke: #4DA9FF 0.3px;
+    box-shadow: 0 0 30px #4DA9FF;
+    right: 0;
+    margin-right: 50px;
+}
+.popup_sk {
+    text-shadow: 0 0 8px #AEFF88;
+    -webkit-text-stroke: #AEFF88 0.3px;
+    box-shadow: 0 0 30px #AEFF88;
+    left: 0;
+    margin-left: 50px;
+}
+.popup_it {
+    text-shadow: 0 0 8px #FFF500;
+    -webkit-text-stroke: #FFF500 0.3px;
+    box-shadow: 0 0 30px #FFF500;
+    right: 0;
+    margin-right: 50px;
+}
+.pop22 {
+    cursor: pointer;
+    animation: popmenu1 linear infinite 1.5s;
+}
+/* 팝업이모지부분 설정 */
+.popup2-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup2-2>div {
+    width: 25%;
+    font-family: "Libre Baskerville", serif;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-text-stroke: #FFF 0.5px;
+}
+.popli_1, .popli_3, .popli_5 {color: #000;}
+.popli_2, .popli_4, .popli_6 {color: #fff;}
+.popup2-2 ul li {margin-bottom: 20px; padding: 10px 0;}
+.popup2-2 ul li:nth-child(1) {margin-top: 20px;}
+
+/* 이모지 설정 */
+.popup_imog {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.popup_imog img {
+    position: absolute;
+    height: 350px;
+    width: 257px;
+    left: 50%;
+    margin-left: -128.5px;
+    top: 50%;
+    margin-top: -175px;
+    z-index: 1;
+}
+/* 폭죽설정 */
+.popup_imog .bomb {
+    z-index: -1;
+    width: 700px;
+    height: 514px;
+    left: 50%;
+    margin-left: -350px;
+    top: 50%;
+    margin-top: -257px;
+    display: none;
+}
+
+
+
+/* class tt값을 받았을때 바뀌는 설정 */
+.popli_11.tt .p1 {text-shadow: 0 0 7px #be46ff; color: #fff;  -webkit-text-stroke: #be46ff 0.5px;}
+.popli_11.tt .p4 {text-shadow: 0 0 7px #be46ff; color: #fff;  -webkit-text-stroke: #be46ff 0.5px;}
+
+.popli_22.tt .p2 {text-shadow: 0 0 7px #be46ff; color: #fff;  -webkit-text-stroke: #be46ff 0.5px;}
+.popli_22.tt .p5 {text-shadow: 0 0 7px #be46ff; color: #fff;  -webkit-text-stroke: #be46ff 0.5px;}
+
+.popli_33.tt .p3 {text-shadow: 0 0 7px #be46ff; color: #fff;  -webkit-text-stroke: #be46ff 0.5px;}
+.popli_33.tt .p6 {text-shadow: 0 0 7px #be46ff; color: #fff;  -webkit-text-stroke: #be46ff 0.5px;}
+
+/* 팝업부분 전체설정 */
+.popseci {
+    position: fixed;
+    z-index: 999;
+    width: 40%;
+    height: 55%;
+    background-color: rgba(00, 00, 00, 0.9);
+    color: #fff;
+}
+/* 팝업스킬 설정 */
+.popskill {
+    box-shadow: 0 0 30px #AEFF88;
+    bottom: 0;
+    margin-bottom: 135px;
+    left: 120px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+/* 팝업에듀 설정  */
+.popedu {
+    box-shadow: 0 0 30px #FF2272;
+    top: 0;
+    margin-top: 135px;
+    left: 120px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: none;
+}
+/* 팝업에듀 설정  */
+.popcar {
+    box-shadow: 0 0 30px #4DA9FF;
+    top: 0;
+    margin-top: 135px;
+    right: 120px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: none;
+}
+/* 팝업에듀 설정  */
+.popits {
+    box-shadow: 0 0 30px #FFF500;
+    bottom: 0;
+    margin-bottom: 135px;
+    right: 120px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 0;
+    display: none;
+}
+
+.popskill_inner {
+    width: 50%;
+    height: 70%;
+    /* background-color: #2137ff; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+}
+/* .popskill_inner h4 {font-size: 30px;} */
+.popskill_dp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.popskill_dp h5 {font-size: 18px; margin: 10px 0; margin-top: 35px; width: 100%; height: 100%;}
+.popskill_dp p {font-size: 16px; text-align: center; margin: 10px 0;}
+.popskill_dp>div {
+    display: flex;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+}
+.popskill_d {}
+.popskill_p {}
+.popskill_dp>div>div {
+    width: 100%;
+    height: 100%;
+}
+
+/* 팝에듀 교육자격 팝업이너 설정 */
+.popedu_inner {
+    width: 65%;
+    height: 100%;
+    margin: 10px auto;
+}
+.popedu_inner h5 {
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.popedu_inner p {margin-bottom: 5px; font-size: 16px;}
+.popedu_inner span {
+    color: rgb(154, 154, 154);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.popcar_inner {
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+.popcar p {margin-bottom: 24px; font-size: 16px;}
+.popcar span {
+    color: rgb(154, 154, 154);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+/* 이츠미팝 자기소개 설정 */
+.popits_inner {
+    width: 60%;
+    margin: 0 auto;
+    height: 60%;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.popits_inner h3 {
+    font-size: 24px;
+}
+.popits_inner>p {margin-top: 15px}
+.popits_inner h3 span {font-size: 16px; font-weight: normal;}
+.popits_block {
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.popits_block p {
+    display: block;
+    position: absolute;
+    font-size: 26px;
+}
+.popits_block p:nth-child(1) {right: 90px; bottom: 15%; rotate: 20deg; color: yellow;}
+.popits_block p:nth-child(2) {left: -10px; bottom: 30px; rotate: -50deg; color: #ff390d;}
+.popits_block p:nth-child(3) {right: 0; bottom: 10px; rotate: -15deg;}
+.popits_block p:nth-child(4) {left: 40%; bottom: 5px; rotate: 5deg; color: #be46ff;}
+.popits_block p:nth-child(5) {left: 40px;  bottom: 5px;}
+.popits_block p:nth-child(6) {left: 30%; bottom: 20%; rotate: -8deg;}
+.popits_block p:nth-child(7) {left: 15%; bottom: 47%; rotate: 15deg;}
+.popits_block p:nth-child(8) {right: 7%; bottom: 22%; rotate: 5deg;}
+.popits_block p:nth-child(9) {right: 10%; bottom: 45%; rotate: -10deg; color: #4aa36c;}
+.popits_block p:nth-child(10) {right: -13%; bottom: 55%; rotate: 80deg; font-size: 20px;}
+.popits_block p:nth-child(11) {right: 35%; bottom: 57%; rotate: 7deg; font-size: 22px;}
+.popits_block p:nth-child(12) {font-size: 20px; rotate: -70deg; bottom: 50%; left: -10%;}
+
+
+/* 스킬퍼센트 설정 */
+.canvas_wrap {
+    position: relative;
+    max-width: 150px;
+    max-height: 150px;
+    padding: 10px 30px;
+}
+.canvas_wrap .percent {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 15px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+.canvas_wrap .percent::after {
+    content: '%';
+}
+.canvas_wrap canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+/* ◇◇◇◇◇◇◇◇◇◇ 팝업 설정 끝 ◇◇◇◇◇◇◇◇◇◇ */
+
+
+
+/* 이모지 흔들흔들 */
+@keyframes imog {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(7deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-7deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* 섹션 제목 반짝반짝 */
+@keyframes bling {
+    0% {text-shadow: 0 0 20px #35ff32;}
+    12.5% {text-shadow: 0 0 35px #35ff32;}
+    25% {text-shadow: 0 0 20px #ff390d;}
+    37.5% {text-shadow: 0 0 35px #ff390d;}
+    50% {text-shadow: 0 0 20px #2137ff;}
+    62.5% {text-shadow: 0 0 35px #2137ff;}
+    75% {text-shadow: 0 0 20px #f4ff21;}
+    87.5% {text-shadow: 0 0 35px #f4ff21;}
+    100% {text-shadow: 0 0 20px #35ff32;}
+}
+
+/* 프로젝트1,2,3 둥둥 */
+@keyframes project1 {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(-3deg);}
+    40% {transform: rotateY(-15deg);}
+    60% {transform: rotate(3deg);}
+    80% {transform: rotateY(10deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes project2 {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(3deg);}
+    40% {transform: rotateY(-10deg);}
+    60% {transform: rotate(3deg);}
+    80% {transform: rotateY(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes project3 {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotateY(-20deg);}
+    40% {transform: rotate(-3deg);}
+    60% {transform: rotateY(10deg);}
+    80% {transform: rotate(3deg);}
+    100% {transform: rotate(0deg);}
+}
+
+/* 팝업 메뉴 둥실둥실 */
+@keyframes popmenu1 {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}

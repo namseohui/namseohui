@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오</title>
+
+    <!-- 외부스타일시트 연결 -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 제이쿼리 CDN -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+    <!-- 깃허브및 서버연결용 버전 정보 입력하기 -->
+    <script src="js/jquery-2.1.1.min.js"></script>
+
+    <!-- 제이쿼리내부에 있는 스타일정보를 가져오기 -->
+    <script src="js/jquery-ui.min.js"></script>
+
+    <!-- 이펙트 효과 연결하기 easing(에이징) -->
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <!-- 마우스 휠효과 CDN 연결하기 -->
+    <script src="js/jquery.mousewheel.min.js"></script>
+
+    <!-- 외부스트립트 연결 -->
+    <script src="js.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 폰트어썸연결 -->
+    <script src="https://kit.fontawesome.com/3b94dc6e6c.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+
+    <div class="wrap">
+        <!-- 이모지 -->
+        <div class="imog">
+            <div class="imog_bg">
+                <img src="img/imog_bg.png" alt="">
+            </div>
+            <div class="imog_basic">
+                <img src="img/imog1.png" alt="">
+            </div>
+            <div class="imog_smile">
+                <img src="img/imog2.png" alt="">
+            </div>
+        </div>
+
+        <!-- 첫번째섹션 메인 -->
+        <section class="port">
+            <div class="port_inner">
+                <h2>PORTFOLIO</h2>
+                <div class="mouse"></div>
+                <div class="clickBox"></div>  
+            </div>
+        </section>
+
+        <!-- 두번째섹션 메인 -->
+        <section class="about">
+            <canvas id="starCanvas"></canvas>
+            <h1>website</h1>
+            <div class="about_stein">
+                <h2>STEINWAY&SONS</h2>
+                <h3>‘STEINWAY&SONS’ 피아노 웹사이트</h3>
+                <p>상품 구입 프로그램 리뉴얼 프로젝트</p>
+                <em>http://nsh7505.dothome.co.kr/project002/</em>
+            </div>
+            <a href="http://nsh7505.dothome.co.kr/project002/" target="_blank">
+                <aside class="about_stein_pop">    
+                    <div>
+                        <p>사이트보기 <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                    </div>
+                </aside>
+            </a>
+            <aside class="about_stein_pop stein_poppop">    
+                <div>
+                    <p>컨셉뷰 보기 <i class="fa-solid fa-magnifying-glass"></i></p>
+                </div>
+            </aside>
+
+            <!-- 컨셉보기 설정 스타인 -->
+            <figure class="stein_poppopup">
+                <h2>STEINWAY&SONS</h2>
+
+                <!-- 모니터설정 -->
+                <div class="poppopup1">
+                    <div>
+                        <img src="img/poppopup_mokup.png" alt="">
+                    </div>
+                    <div>
+                        <ul id="puu">
+                            <li><img src="img/poppopup_mokup_stein1.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_stein2.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_stein3.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_stein4.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="poppopup2">
+                    <div class="poppopup2_inner">
+                        <h4>CONCEPT</h4>
+                        <p>세계적인 피아노 브랜드의 명성에 맞게
+                            <br>피아노 건반을 떠오르게 하는 <b>검정색</b>을 컨셉컬러로
+                            <br><b>고급스러움</b>과 <b>우아함</b>을 강조하며,  색 사용을 절제하여 차분한 느낌을 줍니다.</p>
+                    </div>
+                </div>
+                <div class="poppopup3">
+                    <div class="poppopup3_inner">
+                        <h4>WORK</h4>
+                        <div>
+                            <div>
+                                <p>프로그램 정보</p>
+                                <p>작업기여도 / 작업시간</p>
+                            </div>
+                            <div>
+                                <p><img src="img/work.png" alt=""></p>
+                                <p>디자인 100% / 퍼블리싱 100% / 80h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poppopup4">
+                    <div class="poppopup4_inner">
+                        <h4>COLOR</h4>
+                        <div class="poppopup4_txt">
+                            <div class="poppopup4_txt1">
+                                <p>#FFFFFF</p>
+                            </div>
+                            <div class="poppopup4_txt2">
+                                <p>#000000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poppopup5">
+                    <div class="poppopup5_inner">
+                        <h4>KEYWORD</h4>
+                        <p>피아노 - 건반 - 검은색 - 고급스러움 - 품질 - 명품 - 예술 - 창의성 - 표현 - 감정 - 음악 - 하모니 - 멜로디 - 아름다움<br> - 감동 - 영감 - 창작 - 독창성 - 형식 - 발전 - 기술 - 정교함 - 섬세함 - 조화 - 신뢰 - 가치 - 전통 - 유산 - 역사 - 문화 - 다양성 - 포용</p>
+                    </div>
+                </div>
+                <h3><i class="fa-solid fa-xmark"></i></h3>
+            </figure>
+
+            <div class="about_kiss">
+                <h2>Kiss of Life</h2>
+                <h3>‘Kiss of Life’ 팬페이지 사이트</h3>
+                <p>신규제작 프로젝트</p>
+                <em>http://nsh7505.dothome.co.kr/project003/</em>
+            </div>
+            <a href="http://nsh7505.dothome.co.kr/project003/" target="_blank">
+                <aside class="about_kiss_pop">    
+                    <div>
+                        <p>사이트보기 <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                    </div>
+                </aside>
+            </a>
+            <aside class="about_kiss_pop kiss_poppop">    
+                <div>
+                    <p>컨셉뷰 보기 <i class="fa-solid fa-magnifying-glass"></i></p>
+                </div>
+            </aside>
+
+            <!-- 컨셉보기 설정 키오프 -->
+            <figure class="kiss_poppopup">
+                <h2>KISS OF LIFE</h2>
+
+                <!-- 모니터설정 -->
+                <div class="poppopup1">
+                    <div>
+                        <img src="img/poppopup_mokup.png" alt="">
+                    </div>
+                    <div>
+                        <ul id="puuu">
+                            <li><img src="img/poppopup_mokup_kiss1.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_kiss2.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_kiss3.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_kiss4.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="poppopup2">
+                    <div class="poppopup2_inner">
+                        <h4>CONCEPT</h4>
+                        <p>여성그룹 kiss of life 의 청량함과 활동적인 모습을 강조하고자
+                            <br><b>검정색</b>을 바탕으로 <b>밝은 연두색</b>을 포인트컬러로 지정하여
+                            <br><b>활동적</b>이고 <b>청량함</b>을 강조하여 밝은 느낌을 줍니다.</p>
+                    </div>
+                </div>
+                <div class="poppopup3">
+                    <div class="poppopup3_inner">
+                        <h4>WORK</h4>
+                        <div>
+                            <div>
+                                <p>프로그램 정보</p>
+                                <p>작업기여도 / 작업시간</p>
+                            </div>
+                            <div>
+                                <p><img src="img/work.png" alt=""></p>
+                                <p>디자인 100% / 퍼블리싱 100% / 70h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poppopup4">
+                    <div class="poppopup4_inner">
+                        <h4>COLOR</h4>
+                        <div class="poppopup4_txt">
+                            <div class="poppopup4_txt1 poppopup4_txt1_kiss">
+                                <p>#DDF344</p>
+                            </div>
+                            <div class="poppopup4_txt2">
+                                <p>#000000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poppopup5">
+                    <div class="poppopup5_inner">
+                        <h4>KEYWORD</h4>
+                        <p>kiss of life - 걸그룹 - 귀여움 - 키티 - 핑크색 - 발랄함 - 밝음 - 에너지 - 활동적인 - 즐거움 - 취미 - 놀이 - 재미<br> - 놀이공원 - 머리띠 - 깜찍 - 애교 - 커플 - 사랑 - 결혼 - 가족 - 따뜻함 - 여름 - 햇빛 - 빨강 - 립스틱 - 화장 - 변신 - 파워레인저 - 무지개</p>
+                    </div>
+                </div>
+                <h3><i class="fa-solid fa-xmark"></i></h3>
+            </figure>
+
+
+
+            <div class="about_coffee">
+                <h2>Coffee Museum</h2>
+                <h3>충주커피박물관 웹페이지</h3>
+                <p>예약프로그램 리뉴얼 프로젝트</p>
+                <em>http://shop7505.dothome.co.kr/project001/</em>
+            </div>
+            <a href="http://shop7505.dothome.co.kr/project001/" target="_blank">
+                <aside class="about_coffee_pop">    
+                    <div>
+                        <p>사이트 보기 <i class="fa-solid fa-arrow-up-right-from-square"></i></p>
+                    </div>
+                </aside>
+            </a>
+            <aside class="about_coffee_pop coffee_poppop">    
+                <div>
+                    <p>컨셉뷰 보기 <i class="fa-solid fa-magnifying-glass"></i></p>
+                </div>
+            </aside>
+
+            <!-- 컨셉보기 설정 설정 -->
+            <figure class="coffee_poppopup">
+                <h2>COFFEE MUSEUM</h2>
+
+                <!-- 모니터설정 -->
+                <div class="poppopup1">
+                    <div>
+                        <img src="img/poppopup_mokup.png" alt="">
+                    </div>
+                    <div>
+                        <ul id="puuuu">
+                            <li><img src="img/poppopup_mokup_coffee1.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_coffee2.png" alt=""></li>
+                            <li><img src="img/poppopup_mokup_coffee3.jpg" alt=""></li>
+                            <li><img src="img/poppopup_mokup_coffee4.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="poppopup2">
+                    <div class="poppopup2_inner">
+                        <h4>CONCEPT</h4>
+                        <p><b>커피 자연 박물관</b>을 함께 즐길 수 있는 특별함을 강조하고자
+                            <br>커피의 짙은 <b>갈색</b>, 자연의 나무를 상징하는 <b>녹색</b>을 컨셉컬러로
+                            <br><b>자연친화적</b>이며 <b>차분한</b>느낌을 줍니다.</p>
+                    </div>
+                </div>
+                <div class="poppopup3">
+                    <div class="poppopup3_inner">
+                        <h4>WORK</h4>
+                        <div>
+                            <div>
+                                <p>프로그램 정보</p>
+                                <p>작업기여도 / 작업시간</p>
+                            </div>
+                            <div>
+                                <p><img src="img/work.png" alt=""></p>
+                                <p>디자인 100% / 퍼블리싱 100% / 60h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poppopup4">
+                    <div class="poppopup4_inner">
+                        <h4>COLOR</h4>
+                        <div class="poppopup4_txt">
+                            <div class="poppopup4_txt1 poppopup4_txt1_coffee">
+                                <p>#244430</p>
+                            </div>
+                            <div class="poppopup4_txt2 poppopup4_txt2_coffee">
+                                <p>#482504</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="poppopup5">
+                    <div class="poppopup5_inner">
+                        <h4>KEYWORD</h4>
+                        <p>커피 - 원두 - 카페 - 사진 - 전시회 - 박물관 - 체험 - 농장 - 양 - 구름 - 하늘<br> - 새 - 숲 - 풍경 - 노을 - 바다 - 열차 - 여행 - 비행기 - 해외 - 배낭여행 - 맛집 - 경험 - 첫사랑 - 따뜻함</p>
+                    </div>
+                </div>
+                <h3><i class="fa-solid fa-xmark"></i></h3>
+            </figure>
+        </section>
+
+    </div>
+
+
+
+    <!-- 이모지팝업 -->
+    <div class="popup">
+        <div class="popup1">
+            <h2>PROJECT</h2> <!-- 프로젝트 눌렀을때 폰페이지의 스크롤탑받아서 프로젝트 화면이 바로 보이게 x는 그냥 없어지게 -->
+        </div>
+
+        <div class="popup2">
+            <!-- 메뉴2개 -->
+            <div class="popup2-1">
+                <div class="popup_ed pop22">
+                    <p>Certificate<br>Education</p>
+                </div>
+                <div class="popup_ca pop22"><p>Career</p></div>
+            </div>
+            <!-- 가운데 -->
+            <div class="popup2-2">
+                <div class="popup_txt">
+                    <ul>
+                        <li class="popli_1 popli_11"><p class="p1">발전하고</p></li>
+                        <li class="popli_2 popli_22"><p class="p2">UI & UX</p></li>
+                        <li class="popli_3 popli_33"><p class="p3">남서희입니다</p></li>
+                    </ul>
+                </div>
+                <div class="popup_imog">
+                    <img src="img/imog2.png" alt="" class="img2">
+                    <img src="img/imog3.png" alt="" class="img3">
+                    <img src="img/imog4.png" alt="" class="img4">
+                    <img src="img/imog5.png" alt="" class="img5">
+                    <img src="img/imog6.png" alt="" class="img6">
+                    <img src="img/imog7.png" alt="" class="img7">
+                    <img src="img/bomb1.gif" alt="" class="bomb">
+                </div>
+                <div class="popup_txt">
+                    <ul>
+                        <li class="popli_4 popli_11"><p class="p4">열정가득한</p></li>
+                        <li class="popli_5 popli_22"><p class="p5">디자이너</p></li>
+                        <li class="popli_6 popli_33"><p class="p6">맡겨주세요</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="popup2-3">
+                <div class="popup_sk pop22"><p>Skill</p></div>
+                <div class="popup_it pop22"><p>It's Me</p></div>
+            </div>
+
+        </div>
+
+        <div class="popup3">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+
+
+        <div class="popskill popseci">
+            <div class="popskill_inner">
+                <!-- <h4>Skill</h4> -->
+                <div class="popskill_d popskill_dp">
+                    <h5>디자인 분야</h5>
+                    <div>
+                        <div>
+                            <p>Photoshop</p>
+                            <div class="canvas_wrap">
+                                <canvas class="canvass" width="100" height="100" data-percent="80"></canvas>
+                                <span class="percent"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Illustrator</p>
+                            <div class="canvas_wrap">
+                                <canvas class="canvass" width="100" height="100" data-percent="70"></canvas>
+                                <span class="percent"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Figma</p>
+                            <div class="canvas_wrap">
+                                <canvas class="canvass" width="100" height="100" data-percent="90"></canvas>
+                                <span class="percent"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popskill_p popskill_dp">
+                    <h5>퍼블리싱 분야</h5>
+                    <div>
+                        <div>
+                            <p>html</p>
+                            <div class="canvas_wrap">
+                                <canvas class="canvass" width="100" height="100" data-percent="90"></canvas>
+                                <span class="percent"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>css</p>
+                            <div class="canvas_wrap">
+                                <canvas class="canvass" width="100" height="100" data-percent="90"></canvas>
+                                <span class="percent"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <p>javascript</p>
+                            <div class="canvas_wrap">
+                                <canvas class="canvass" width="100" height="100" data-percent="70"></canvas>
+                                <span class="percent"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="popedu popseci">
+            <div class="popedu_inner">
+                <h5>교육</h5>
+                <p><span>2024.10</span> UI&UX 프론트엔드 개발자양성 과정 수료</p>
+                <p><span>2015.02</span> 대전보건대학교 사회복지학과 졸업</p>
+                <p><span>2013.02</span> 대전성모여자고등학교 졸업</p>
+                <h5>자격</h5>
+                <p><span>2017.11</span> 2종보통운전면허 <span>경찰청</span></p>
+                <p><span>2016.03</span> ITQ 한글파워포인트 A등급 <span>한국생산성본부</span></p>
+                <p><span>2016.03</span> ITQ 아래한글 A등급 <span>한국생산성본부</span></p>
+                <p><span>2016.01</span> GTQi(그래픽기술자격 일러스트) 1급 <span>한국생산성본부</span></p>
+                <p><span>2015.12</span> GTQ(그래픽기술자격) 1급 <span>한국생산성본부</span></p>
+                <p><span>2015.02</span> 사회복지사2급 <span>보건복지부</span></p>
+                <p><span>2013.12</span> ITQ 아래엑셀 A등급 <span>한국생산성본부</span></p>
+                <p><span>2013.11</span> 요양보호사1급 <span>보건복지부</span></p>
+            </div>
+        </div>
+        <div class="popcar popseci">
+            <div class="popcar_inner">
+                <p><span>2024.03 ~ 2024.10</span> UI&UX 프론트엔드 개발자 양성 교육과정 수료</p>
+                <p><span>2018.12 ~ 2024.03</span> <b>코앤코교육</b> 사무장 : 인사, 회계, 총무, 디자인, 영업지원</p>
+                <p><span>2017.11 ~ 2018.03</span> <b>악어스캔</b> 사원 : DB구축 및 전산자료 수정 및 문서관리</p>
+                <p><span>2016.11 ~ 2017.06</span> <b>신한카드</b> 사원 : 영업 및 상담 아웃바운드</p>
+                <p><span>2016.03 ~ 2016.09</span> <b>서울동물병원</b> 사원 : 수의사 보조 및 사무업무</p>
+            </div>
+        </div>
+        <div class="popits popseci">
+            <div class="popits_inner">
+                <h3>남서희 <span>1994.02</span></h3>
+                <p>nsh7505@naver.com</p>
+                <div class="popits_block">
+                    <p>#positive</p>
+                    <p>#energy</p>
+                    <p>#bright</p>
+                    <p>#SMILE</p>
+                    <p>#passion</p>
+                    <p>#ESTJ</p>
+                    <p>#practical</p>
+                    <p>#patient</p>
+                    <p>#confident</p>
+                    <p>#homebody</p>
+                    <p>#fast learner</p>
+                    <p>#adventurous</p>
+                </div>
+            </div>
+        </div>
+
+
+
+</body>
+</html>
